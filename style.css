@@ -1,3 +1,14 @@
+:root{
+    --cor-texto-link: #5A13B4;
+    --cor-titulo: #3B1270;
+    --cor-texto-destaque: #8E35FF;
+
+    --cor-buscar: #5913b470;
+
+    --cor-fundo-escolha-curso: #3B1270;
+    --cor-fundo-inscreva-se: #8E35FF;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +16,11 @@
 
 header{
     margin-top: 2.5vw;
+}
+
+a{
+   color: var(--cor-texto-link);
+   text-decoration: none;
 }
 
 .marginSite{
@@ -21,5 +37,25 @@ header{
     margin-left: 5vw;
     justify-content: space-between;
     width: 100%;
+}
+
+.containerBlogGrad{
+    gap: 2vw;
+}
+
+.containerBuscar{
+    border: 1px, solid, var(--cor-buscar);
+    padding: 5px 15px;
+    min-width: 220px;
+    justify-content: space-between;
+}
+
+.containerBuscar input{
+    border: none;
+}
+
+.containerBuscar button{
+    background-color: transparent;
+    border: none;
 }
 /* Fim Header*/
