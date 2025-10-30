@@ -12,10 +12,7 @@
 *{
     margin: 0;
     padding: 0;
-}
-
-header{
-    margin-top: 2.5vw;
+    box-sizing: border-box;
 }
 
 a{
@@ -24,7 +21,7 @@ a{
 }
 
 .marginSite{
-    margin: 0 10vw;
+    margin: 2.5vw 10vw;
 }
 
 .flex{
@@ -32,14 +29,14 @@ a{
     align-items: center;
 }
 
-/*Header*/
+/*Cabeçalho (Header)*/
 .containerMenuPrincipal{
     margin-left: 5vw;
     justify-content: space-between;
     width: 100%;
 }
 
-.containerBlogGrad{
+.containerBlogGrad, .containerBuscarAmb{
     gap: 2vw;
 }
 
@@ -52,10 +49,59 @@ a{
 
 .containerBuscar input{
     border: none;
+    color: var(--cor-titulo);
+}
+
+.containerBuscar input:focus{
+    outline: none;
+}
+
+.containerBuscar input::placeholder{
+    color: var(--cor-buscar);
 }
 
 .containerBuscar button{
     background-color: transparent;
     border: none;
+    width: 15px;
+    height: 15px;
 }
-/* Fim Header*/
+
+.containerBuscar button img{
+    width: 100%;
+}
+
+.containerBuscarAmb a{
+    gap: 0.5vw;
+}
+/* Fim cabeçalho (Header)*/
+
+/*Apresentação*/
+h1{
+    color: var(--cor-titulo);
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.containerApresentação{
+    align-items: end;
+    justify-content: space-between;
+}
+
+.containerApresentação h2{
+    color: var(--cor-titulo);
+    font-weight: 400;
+    font-size: 9rem;
+    max-width: 950px;
+}
+
+.containerApresentação img{
+    min-width: 50px;
+}
+
+.containerApresentação p{
+    color: var(--cor-titulo);
+    max-width: 236px;
+}
+
+/*Apresentação (Titulo)*/
