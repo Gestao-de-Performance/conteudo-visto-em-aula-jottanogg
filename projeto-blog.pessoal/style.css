@@ -33,7 +33,7 @@ header > .interface{
 header a{
     color: black
     text-decoration: none;
-    display: inline-block;
+    display inline-block;
     transition: .2s; 
 }
 
