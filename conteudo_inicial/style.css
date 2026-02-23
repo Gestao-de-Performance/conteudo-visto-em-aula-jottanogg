@@ -1,0 +1,107 @@
+:root{
+    --cor-texto-link: #5A13B4;
+    --cor-titulo: #3B1270;
+    --cor-texto-destaque: #8E35FF;
+
+    --cor-buscar: #5913b470;
+
+    --cor-fundo-escolha-curso: #3B1270;
+    --cor-fundo-inscreva-se: #8E35FF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+   color: var(--cor-texto-link);
+   text-decoration: none;
+}
+
+.marginSite{
+    margin: 2.5vw 10vw;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/*Cabeçalho (Header)*/
+.containerMenuPrincipal{
+    margin-left: 5vw;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.containerBlogGrad, .containerBuscarAmb{
+    gap: 2vw;
+}
+
+.containerBuscar{
+    border: 1px, solid, var(--cor-buscar);
+    padding: 5px 15px;
+    min-width: 220px;
+    justify-content: space-between;
+}
+
+.containerBuscar input{
+    border: none;
+    color: var(--cor-titulo);
+}
+
+.containerBuscar input:focus{
+    outline: none;
+}
+
+.containerBuscar input::placeholder{
+    color: var(--cor-buscar);
+}
+
+.containerBuscar button{
+    background-color: transparent;
+    border: none;
+    width: 15px;
+    height: 15px;
+}
+
+.containerBuscar button img{
+    width: 100%;
+}
+
+.containerBuscarAmb a{
+    gap: 0.5vw;
+}
+/* Fim cabeçalho (Header)*/
+
+/*Apresentação*/
+h1{
+    color: var(--cor-titulo);
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.containerApresentação{
+    align-items: end;
+    justify-content: space-between;
+}
+
+.containerApresentação h2{
+    color: var(--cor-titulo);
+    font-weight: 400;
+    font-size: 9rem;
+    max-width: 950px;
+}
+
+.containerApresentação img{
+    min-width: 50px;
+}
+
+.containerApresentação p{
+    color: var(--cor-titulo);
+    max-width: 236px;
+}
+
+/*Apresentação (Titulo)*/
